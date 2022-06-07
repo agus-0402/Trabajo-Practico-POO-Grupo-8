@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="d6e87557c0eb436686a0f339da17ef7d" Name="Diagram1" >
+        <EntityTypeShape EntityType="Model1.Usuario" Width="1.5" PointX="6.625" PointY="1.875" />
+        <EntityTypeShape EntityType="Model1.Perfil" Width="1.5" PointX="9.125" PointY="2" />
+        <EntityTypeShape EntityType="Model1.Formulario" Width="1.5" PointX="6.5" PointY="4.25" />
+        <EntityTypeShape EntityType="Model1.Permiso" Width="1.5" PointX="8.5" PointY="4.5" />
+        <AssociationConnector Association="Model1.UsuarioPerfil" />
+        <AssociationConnector Association="Model1.PermisoFormulario" />
+        <AssociationConnector Association="Model1.PerfilFormulario" ManuallyRouted="true" >
+          <ConnectorPoint PointX="9.125" PointY="3.3827267865597941" />
+          <ConnectorPoint PointX="8.2395833333333339" PointY="3.3827267865597941" />
+          <ConnectorPoint PointX="8.2395833333333339" PointY="4.110087890625" />
+          <ConnectorPoint PointX="7.25" PointY="4.110087890625" />
+          <ConnectorPoint PointX="7.25" PointY="4.25" />
+        </AssociationConnector>
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

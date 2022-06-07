@@ -29,22 +29,22 @@
         private void InitializeComponent()
         {
             this.pnlLogin = new System.Windows.Forms.Panel();
+            this.btnRegistrarLO = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
             this.txtUsuario = new System.Windows.Forms.TextBox();
             this.txtContraseña = new System.Windows.Forms.TextBox();
             this.btnLoginLO = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
-            this.btnRegistrarLO = new System.Windows.Forms.Button();
             this.pnlRegistro = new System.Windows.Forms.Panel();
-            this.label2 = new System.Windows.Forms.Label();
-            this.txtNombreRE = new System.Windows.Forms.TextBox();
-            this.txtApellidoRE = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.txtUsuarioRE = new System.Windows.Forms.TextBox();
+            this.btnRegistrarRE = new System.Windows.Forms.Button();
             this.label6 = new System.Windows.Forms.Label();
             this.txtContraseñaRE = new System.Windows.Forms.TextBox();
-            this.btnRegistrarRE = new System.Windows.Forms.Button();
+            this.label5 = new System.Windows.Forms.Label();
+            this.txtUsuarioRE = new System.Windows.Forms.TextBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.txtNombreRE = new System.Windows.Forms.TextBox();
+            this.txtApellidoRE = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
             this.pnlLogin.SuspendLayout();
             this.pnlRegistro.SuspendLayout();
             this.SuspendLayout();
@@ -60,6 +60,30 @@
             this.pnlLogin.Name = "pnlLogin";
             this.pnlLogin.Size = new System.Drawing.Size(264, 255);
             this.pnlLogin.TabIndex = 8;
+            // 
+            // btnRegistrarLO
+            // 
+            this.btnRegistrarLO.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnRegistrarLO.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRegistrarLO.Location = new System.Drawing.Point(76, 203);
+            this.btnRegistrarLO.Name = "btnRegistrarLO";
+            this.btnRegistrarLO.Size = new System.Drawing.Size(113, 34);
+            this.btnRegistrarLO.TabIndex = 12;
+            this.btnRegistrarLO.Text = "Registrar";
+            this.btnRegistrarLO.UseVisualStyleBackColor = true;
+            this.btnRegistrarLO.Click += new System.EventHandler(this.btnRegistrarLO_Click);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Verdana", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(23, 11);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(226, 70);
+            this.label1.TabIndex = 11;
+            this.label1.Text = "Sánchez \r\nAutomotores";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // txtUsuario
             // 
@@ -96,29 +120,6 @@
             this.btnLoginLO.Text = "Ingresar";
             this.btnLoginLO.UseVisualStyleBackColor = true;
             // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Times New Roman", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(42, 17);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(171, 64);
-            this.label1.TabIndex = 11;
-            this.label1.Text = "Sánchez \r\nAutomotores";
-            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // btnRegistrarLO
-            // 
-            this.btnRegistrarLO.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnRegistrarLO.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnRegistrarLO.Location = new System.Drawing.Point(76, 203);
-            this.btnRegistrarLO.Name = "btnRegistrarLO";
-            this.btnRegistrarLO.Size = new System.Drawing.Size(113, 34);
-            this.btnRegistrarLO.TabIndex = 12;
-            this.btnRegistrarLO.Text = "Registrar";
-            this.btnRegistrarLO.UseVisualStyleBackColor = true;
-            this.btnRegistrarLO.Click += new System.EventHandler(this.btnRegistrarLO_Click);
-            // 
             // pnlRegistro
             // 
             this.pnlRegistro.Controls.Add(this.btnRegistrarRE);
@@ -136,74 +137,16 @@
             this.pnlRegistro.Size = new System.Drawing.Size(243, 335);
             this.pnlRegistro.TabIndex = 9;
             // 
-            // label2
+            // btnRegistrarRE
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Times New Roman", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(3, 17);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(117, 32);
-            this.label2.TabIndex = 13;
-            this.label2.Text = "Registro";
-            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // txtNombreRE
-            // 
-            this.txtNombreRE.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtNombreRE.ForeColor = System.Drawing.Color.Silver;
-            this.txtNombreRE.Location = new System.Drawing.Point(9, 75);
-            this.txtNombreRE.Name = "txtNombreRE";
-            this.txtNombreRE.Size = new System.Drawing.Size(227, 31);
-            this.txtNombreRE.TabIndex = 14;
-            // 
-            // txtApellidoRE
-            // 
-            this.txtApellidoRE.BackColor = System.Drawing.Color.White;
-            this.txtApellidoRE.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtApellidoRE.ForeColor = System.Drawing.Color.Silver;
-            this.txtApellidoRE.Location = new System.Drawing.Point(9, 128);
-            this.txtApellidoRE.Name = "txtApellidoRE";
-            this.txtApellidoRE.Size = new System.Drawing.Size(227, 31);
-            this.txtApellidoRE.TabIndex = 13;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(9, 110);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(53, 15);
-            this.label3.TabIndex = 15;
-            this.label3.Text = "Apellido";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(9, 59);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(49, 15);
-            this.label4.TabIndex = 16;
-            this.label4.Text = "Nombre";
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(6, 162);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(108, 15);
-            this.label5.TabIndex = 20;
-            this.label5.Text = "Nombre de usuario";
-            // 
-            // txtUsuarioRE
-            // 
-            this.txtUsuarioRE.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtUsuarioRE.ForeColor = System.Drawing.Color.Silver;
-            this.txtUsuarioRE.Location = new System.Drawing.Point(9, 178);
-            this.txtUsuarioRE.Name = "txtUsuarioRE";
-            this.txtUsuarioRE.Size = new System.Drawing.Size(227, 31);
-            this.txtUsuarioRE.TabIndex = 18;
+            this.btnRegistrarRE.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRegistrarRE.Location = new System.Drawing.Point(57, 266);
+            this.btnRegistrarRE.Name = "btnRegistrarRE";
+            this.btnRegistrarRE.Size = new System.Drawing.Size(126, 61);
+            this.btnRegistrarRE.TabIndex = 23;
+            this.btnRegistrarRE.Text = "Registrar";
+            this.btnRegistrarRE.UseVisualStyleBackColor = true;
+            this.btnRegistrarRE.Click += new System.EventHandler(this.btnRegistrarRE_Click);
             // 
             // label6
             // 
@@ -224,15 +167,74 @@
             this.txtContraseñaRE.Size = new System.Drawing.Size(227, 31);
             this.txtContraseñaRE.TabIndex = 21;
             // 
-            // btnRegistrarRE
+            // label5
             // 
-            this.btnRegistrarRE.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnRegistrarRE.Location = new System.Drawing.Point(57, 266);
-            this.btnRegistrarRE.Name = "btnRegistrarRE";
-            this.btnRegistrarRE.Size = new System.Drawing.Size(126, 61);
-            this.btnRegistrarRE.TabIndex = 23;
-            this.btnRegistrarRE.Text = "Registrar";
-            this.btnRegistrarRE.UseVisualStyleBackColor = true;
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(6, 162);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(108, 15);
+            this.label5.TabIndex = 20;
+            this.label5.Text = "Nombre de usuario";
+            // 
+            // txtUsuarioRE
+            // 
+            this.txtUsuarioRE.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtUsuarioRE.ForeColor = System.Drawing.Color.Silver;
+            this.txtUsuarioRE.Location = new System.Drawing.Point(9, 178);
+            this.txtUsuarioRE.Name = "txtUsuarioRE";
+            this.txtUsuarioRE.Size = new System.Drawing.Size(227, 31);
+            this.txtUsuarioRE.TabIndex = 18;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(9, 59);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(49, 15);
+            this.label4.TabIndex = 16;
+            this.label4.Text = "Nombre";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(9, 110);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(53, 15);
+            this.label3.TabIndex = 15;
+            this.label3.Text = "Apellido";
+            // 
+            // txtNombreRE
+            // 
+            this.txtNombreRE.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtNombreRE.ForeColor = System.Drawing.Color.Silver;
+            this.txtNombreRE.Location = new System.Drawing.Point(9, 75);
+            this.txtNombreRE.Name = "txtNombreRE";
+            this.txtNombreRE.Size = new System.Drawing.Size(227, 31);
+            this.txtNombreRE.TabIndex = 14;
+            // 
+            // txtApellidoRE
+            // 
+            this.txtApellidoRE.BackColor = System.Drawing.Color.White;
+            this.txtApellidoRE.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtApellidoRE.ForeColor = System.Drawing.Color.Silver;
+            this.txtApellidoRE.Location = new System.Drawing.Point(9, 128);
+            this.txtApellidoRE.Name = "txtApellidoRE";
+            this.txtApellidoRE.Size = new System.Drawing.Size(227, 31);
+            this.txtApellidoRE.TabIndex = 13;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Verdana", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(3, 17);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(151, 35);
+            this.label2.TabIndex = 13;
+            this.label2.Text = "Registro";
+            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // Form1
             // 

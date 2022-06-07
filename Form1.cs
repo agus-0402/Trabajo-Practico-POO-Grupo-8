@@ -69,5 +69,15 @@ namespace vista
             pnlLogin.Location = new Point(282, 12);
             this.Size = new Size(270, 390);
         }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnRegistrarRE_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
