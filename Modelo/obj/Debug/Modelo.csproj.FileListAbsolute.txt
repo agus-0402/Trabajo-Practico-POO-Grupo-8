@@ -1,0 +1,33 @@
+<<<<<<< HEAD
+C:\Users\javie\OneDrive\Documentos\Universidad\Programación Orientada a Objetos\TrabajoGrupalPO\Trabajo-practico-POO-grupo-8\Modelo\bin\Debug\Modelo.dll.config
+C:\Users\javie\OneDrive\Documentos\Universidad\Programación Orientada a Objetos\TrabajoGrupalPO\Trabajo-practico-POO-grupo-8\Modelo\bin\Debug\Modelo.dll
+C:\Users\javie\OneDrive\Documentos\Universidad\Programación Orientada a Objetos\TrabajoGrupalPO\Trabajo-practico-POO-grupo-8\Modelo\bin\Debug\Modelo.pdb
+C:\Users\javie\OneDrive\Documentos\Universidad\Programación Orientada a Objetos\TrabajoGrupalPO\Trabajo-practico-POO-grupo-8\Modelo\bin\Debug\Controladora.dll
+C:\Users\javie\OneDrive\Documentos\Universidad\Programación Orientada a Objetos\TrabajoGrupalPO\Trabajo-practico-POO-grupo-8\Modelo\bin\Debug\EntityFramework.dll
+C:\Users\javie\OneDrive\Documentos\Universidad\Programación Orientada a Objetos\TrabajoGrupalPO\Trabajo-practico-POO-grupo-8\Modelo\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\javie\OneDrive\Documentos\Universidad\Programación Orientada a Objetos\TrabajoGrupalPO\Trabajo-practico-POO-grupo-8\Modelo\bin\Debug\Controladora.pdb
+C:\Users\javie\OneDrive\Documentos\Universidad\Programación Orientada a Objetos\TrabajoGrupalPO\Trabajo-practico-POO-grupo-8\Modelo\bin\Debug\Controladora.dll.config
+C:\Users\javie\OneDrive\Documentos\Universidad\Programación Orientada a Objetos\TrabajoGrupalPO\Trabajo-practico-POO-grupo-8\Modelo\bin\Debug\EntityFramework.xml
+C:\Users\javie\OneDrive\Documentos\Universidad\Programación Orientada a Objetos\TrabajoGrupalPO\Trabajo-practico-POO-grupo-8\Modelo\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\javie\OneDrive\Documentos\Universidad\Programación Orientada a Objetos\TrabajoGrupalPO\Trabajo-practico-POO-grupo-8\Modelo\obj\Debug\Modelo.csproj.AssemblyReference.cache
+C:\Users\javie\OneDrive\Documentos\Universidad\Programación Orientada a Objetos\TrabajoGrupalPO\Trabajo-practico-POO-grupo-8\Modelo\obj\Debug\Modelo.csproj.CoreCompileInputs.cache
+C:\Users\javie\OneDrive\Documentos\Universidad\Programación Orientada a Objetos\TrabajoGrupalPO\Trabajo-practico-POO-grupo-8\Modelo\obj\Debug\Modelo.csproj.CopyComplete
+C:\Users\javie\OneDrive\Documentos\Universidad\Programación Orientada a Objetos\TrabajoGrupalPO\Trabajo-practico-POO-grupo-8\Modelo\obj\Debug\Modelo.dll
+C:\Users\javie\OneDrive\Documentos\Universidad\Programación Orientada a Objetos\TrabajoGrupalPO\Trabajo-practico-POO-grupo-8\Modelo\obj\Debug\Modelo.pdb
+=======
+C:\Users\SayavedraLautaroFa\Desktop\Proyect X\Modelo\bin\Debug\Modelo.dll.config
+C:\Users\SayavedraLautaroFa\Desktop\Proyect X\Modelo\bin\Debug\Modelo.dll
+C:\Users\SayavedraLautaroFa\Desktop\Proyect X\Modelo\bin\Debug\Modelo.pdb
+C:\Users\SayavedraLautaroFa\Desktop\Proyect X\Modelo\bin\Debug\Controladora.dll
+C:\Users\SayavedraLautaroFa\Desktop\Proyect X\Modelo\bin\Debug\EntityFramework.dll
+C:\Users\SayavedraLautaroFa\Desktop\Proyect X\Modelo\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\SayavedraLautaroFa\Desktop\Proyect X\Modelo\bin\Debug\Controladora.pdb
+C:\Users\SayavedraLautaroFa\Desktop\Proyect X\Modelo\bin\Debug\Controladora.dll.config
+C:\Users\SayavedraLautaroFa\Desktop\Proyect X\Modelo\bin\Debug\EntityFramework.xml
+C:\Users\SayavedraLautaroFa\Desktop\Proyect X\Modelo\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\SayavedraLautaroFa\Desktop\Proyect X\Modelo\obj\Debug\Modelo.csproj.AssemblyReference.cache
+C:\Users\SayavedraLautaroFa\Desktop\Proyect X\Modelo\obj\Debug\Modelo.csproj.CoreCompileInputs.cache
+C:\Users\SayavedraLautaroFa\Desktop\Proyect X\Modelo\obj\Debug\Modelo.csproj.CopyComplete
+C:\Users\SayavedraLautaroFa\Desktop\Proyect X\Modelo\obj\Debug\Modelo.dll
+C:\Users\SayavedraLautaroFa\Desktop\Proyect X\Modelo\obj\Debug\Modelo.pdb
+>>>>>>> 8e088c5254d957d3c146c7d518b2989fb425d6ec
