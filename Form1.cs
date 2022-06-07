@@ -24,7 +24,7 @@ namespace vista
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            
+            this.Size = new Size(300, 318);
         }
 
         private void txtUsuario_Enter(object sender, EventArgs e)
@@ -61,6 +61,11 @@ namespace vista
                 txtContraseña.Text = "Contraseña";
                 txtContraseña.ForeColor = Color.Silver;
             }
+        }
+
+        private void btnRegistrarLO_Click(object sender, EventArgs e)
+        {
+            pnlRegistro.Location = new Point(282, 12);
         }
     }
 }
