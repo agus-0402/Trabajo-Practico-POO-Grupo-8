@@ -65,7 +65,9 @@ namespace vista
 
         private void btnRegistrarLO_Click(object sender, EventArgs e)
         {
-            pnlRegistro.Location = new Point(282, 12);
+            pnlRegistro.Location = new Point(12, 12);
+            pnlLogin.Location = new Point(282, 12);
+            this.Size = new Size(270, 390);
         }
     }
 }

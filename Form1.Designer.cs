@@ -153,7 +153,7 @@
             this.txtNombreRE.ForeColor = System.Drawing.Color.Silver;
             this.txtNombreRE.Location = new System.Drawing.Point(9, 75);
             this.txtNombreRE.Name = "txtNombreRE";
-            this.txtNombreRE.Size = new System.Drawing.Size(221, 31);
+            this.txtNombreRE.Size = new System.Drawing.Size(227, 31);
             this.txtNombreRE.TabIndex = 14;
             // 
             // txtApellidoRE
@@ -163,7 +163,7 @@
             this.txtApellidoRE.ForeColor = System.Drawing.Color.Silver;
             this.txtApellidoRE.Location = new System.Drawing.Point(9, 128);
             this.txtApellidoRE.Name = "txtApellidoRE";
-            this.txtApellidoRE.Size = new System.Drawing.Size(221, 31);
+            this.txtApellidoRE.Size = new System.Drawing.Size(227, 31);
             this.txtApellidoRE.TabIndex = 13;
             // 
             // label3
@@ -202,7 +202,7 @@
             this.txtUsuarioRE.ForeColor = System.Drawing.Color.Silver;
             this.txtUsuarioRE.Location = new System.Drawing.Point(9, 178);
             this.txtUsuarioRE.Name = "txtUsuarioRE";
-            this.txtUsuarioRE.Size = new System.Drawing.Size(221, 31);
+            this.txtUsuarioRE.Size = new System.Drawing.Size(227, 31);
             this.txtUsuarioRE.TabIndex = 18;
             // 
             // label6
@@ -221,7 +221,7 @@
             this.txtContraseñaRE.ForeColor = System.Drawing.Color.Silver;
             this.txtContraseñaRE.Location = new System.Drawing.Point(9, 229);
             this.txtContraseñaRE.Name = "txtContraseñaRE";
-            this.txtContraseñaRE.Size = new System.Drawing.Size(221, 31);
+            this.txtContraseñaRE.Size = new System.Drawing.Size(227, 31);
             this.txtContraseñaRE.TabIndex = 21;
             // 
             // btnRegistrarRE
