@@ -11,7 +11,14 @@
         <EntityTypeShape EntityType="Model1.Permiso" Width="1.5" PointX="9.125" PointY="4.375" />
         <AssociationConnector Association="Model1.UsuarioPerfil" />
         <AssociationConnector Association="Model1.PermisoFormulario" />
-        <AssociationConnector Association="Model1.PerfilFormulario" ManuallyRouted="false" >
+        <AssociationConnector Association="Model1.PerfilFormulario" ManuallyRouted="true" >
+          <ConnectorPoint PointX="9.5482377480598384" PointY="3.7879850260416661" />
+          <ConnectorPoint PointX="8.75" PointY="4.1629850260416656" />
+          <ConnectorPoint PointX="8.75" PointY="4" />
+          <ConnectorPoint PointX="8.4661452984437346" PointY="4" />
+          <ConnectorPoint PointX="8.7051083691128781" PointY="4.25125" />
+          <ConnectorPoint PointX="7.9290670588323167" PointY="4.25125" />
+          <ConnectorPoint PointX="7.9290670588323167" PointY="4.375" />
         </AssociationConnector>
       </Diagram>
     </edmx:Diagrams>
