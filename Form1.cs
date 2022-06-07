@@ -21,5 +21,46 @@ namespace vista
         {
 
         }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void txtUsuario_Enter(object sender, EventArgs e)
+        {
+            if(txtUsuario.Text == "Nombre de usuario")
+            {
+                txtUsuario.Text = "";
+                txtUsuario.ForeColor = Color.Black;
+            }          
+        }
+
+        private void txtContraseña_Enter(object sender, EventArgs e)
+        {
+            if (txtContraseña.Text == "Contraseña")
+            {
+                txtContraseña.Text = "";
+                txtContraseña.ForeColor = Color.Black;
+            }
+        }
+
+        private void txtUsuario_Leave(object sender, EventArgs e)
+        {
+            if(txtUsuario.Text == "")
+            {
+                txtUsuario.Text = "Nombre de usuario";
+                txtUsuario.ForeColor = Color.Silver;
+            }
+        }
+
+        private void txtContraseña_Leave(object sender, EventArgs e)
+        {
+            if (txtContraseña.Text == "")
+            {
+                txtContraseña.Text = "Contraseña";
+                txtContraseña.ForeColor = Color.Silver;
+            }
+        }
     }
 }
