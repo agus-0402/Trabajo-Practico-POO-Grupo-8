@@ -63,7 +63,6 @@
             // 
             // btnRegistrarLO
             // 
-            this.btnRegistrarLO.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnRegistrarLO.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnRegistrarLO.Location = new System.Drawing.Point(76, 203);
             this.btnRegistrarLO.Name = "btnRegistrarLO";
@@ -240,7 +239,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.Lime;
+            this.BackColor = System.Drawing.Color.WhiteSmoke;
             this.ClientSize = new System.Drawing.Size(530, 351);
             this.Controls.Add(this.pnlRegistro);
             this.Controls.Add(this.pnlLogin);
