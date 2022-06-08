@@ -1,0 +1,11 @@
+C:\Users\agusp\Trabajo-Practico-POO-Grupo-8\Modelo\bin\Debug\Modelo.dll.config
+C:\Users\agusp\Trabajo-Practico-POO-Grupo-8\Modelo\bin\Debug\Modelo.dll
+C:\Users\agusp\Trabajo-Practico-POO-Grupo-8\Modelo\bin\Debug\Modelo.pdb
+C:\Users\agusp\Trabajo-Practico-POO-Grupo-8\Modelo\bin\Debug\EntityFramework.dll
+C:\Users\agusp\Trabajo-Practico-POO-Grupo-8\Modelo\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\agusp\Trabajo-Practico-POO-Grupo-8\Modelo\bin\Debug\EntityFramework.xml
+C:\Users\agusp\Trabajo-Practico-POO-Grupo-8\Modelo\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\agusp\Trabajo-Practico-POO-Grupo-8\Modelo\obj\Debug\Modelo.csproj.CoreCompileInputs.cache
+C:\Users\agusp\Trabajo-Practico-POO-Grupo-8\Modelo\obj\Debug\Modelo.csproj.CopyComplete
+C:\Users\agusp\Trabajo-Practico-POO-Grupo-8\Modelo\obj\Debug\Modelo.dll
+C:\Users\agusp\Trabajo-Practico-POO-Grupo-8\Modelo\obj\Debug\Modelo.pdb

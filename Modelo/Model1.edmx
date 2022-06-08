@@ -1,0 +1,309 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="Model1.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2012" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityContainer Name="Model1StoreContainer">
+    <EntitySet Name="UsuarioSet" EntityType="Model1.Store.UsuarioSet" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="PerfilSet" EntityType="Model1.Store.PerfilSet" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="FormularioSet" EntityType="Model1.Store.FormularioSet" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="PermisoSet" EntityType="Model1.Store.PermisoSet" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="PermisoFormulario" EntityType="Model1.Store.PermisoFormulario" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="PerfilFormulario" EntityType="Model1.Store.PerfilFormulario" store:Type="Tables" Schema="dbo" />
+    <AssociationSet Name="UsuarioPerfil" Association="Model1.Store.UsuarioPerfil">
+      <End Role="Usuario" EntitySet="UsuarioSet" />
+      <End Role="Perfil" EntitySet="PerfilSet" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PermisoFormulario_Permiso" Association="Model1.Store.FK_PermisoFormulario_Permiso">
+      <End Role="Permiso" EntitySet="PermisoSet" />
+      <End Role="PermisoFormulario" EntitySet="PermisoFormulario" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PermisoFormulario_Formulario" Association="Model1.Store.FK_PermisoFormulario_Formulario">
+      <End Role="Formulario" EntitySet="FormularioSet" />
+      <End Role="PermisoFormulario" EntitySet="PermisoFormulario" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PerfilFormulario_Perfil" Association="Model1.Store.FK_PerfilFormulario_Perfil">
+      <End Role="Perfil" EntitySet="PerfilSet" />
+      <End Role="PerfilFormulario" EntitySet="PerfilFormulario" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PerfilFormulario_Formulario" Association="Model1.Store.FK_PerfilFormulario_Formulario">
+      <End Role="Formulario" EntitySet="FormularioSet" />
+      <End Role="PerfilFormulario" EntitySet="PerfilFormulario" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="UsuarioSet">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Nombre" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Email" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="DNI" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Contraseña" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Perfil_Id" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="PerfilSet">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Nombre" Type="nvarchar(max)" Nullable="false" />
+  </EntityType>
+  <EntityType Name="FormularioSet">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Nombre" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="NombreSistema" Type="nvarchar(max)" Nullable="false" />
+  </EntityType>
+  <EntityType Name="PermisoSet">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Nombre" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="NombreSistema" Type="nvarchar(max)" Nullable="false" />
+  </EntityType>
+  <EntityType Name="PermisoFormulario">
+    <Key>
+      <PropertyRef Name="Permiso_Id" />
+      <PropertyRef Name="Formulario_Id" />
+    </Key>
+    <Property Name="Permiso_Id" Type="int" Nullable="false" />
+    <Property Name="Formulario_Id" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="PerfilFormulario">
+    <Key>
+      <PropertyRef Name="Perfil_Id" />
+      <PropertyRef Name="Formulario_Id" />
+    </Key>
+    <Property Name="Perfil_Id" Type="int" Nullable="false" />
+    <Property Name="Formulario_Id" Type="int" Nullable="false" />
+  </EntityType>
+  <Association Name="UsuarioPerfil">
+    <End Role="Usuario" Type="Model1.Store.UsuarioSet" Multiplicity="*" />
+    <End Role="Perfil" Type="Model1.Store.PerfilSet" Multiplicity="1" />
+    <ReferentialConstraint>
+      <Principal Role="Perfil">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Usuario">
+        <PropertyRef Name="Perfil_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PermisoFormulario_Permiso">
+    <End Role="Permiso" Type="Model1.Store.PermisoSet" Multiplicity="1" />
+    <End Role="PermisoFormulario" Type="Model1.Store.PermisoFormulario" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Permiso">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="PermisoFormulario">
+        <PropertyRef Name="Permiso_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PermisoFormulario_Formulario">
+    <End Role="PermisoFormulario" Type="Model1.Store.PermisoFormulario" Multiplicity="*" />
+    <End Role="Formulario" Type="Model1.Store.FormularioSet" Multiplicity="1" />
+    <ReferentialConstraint>
+      <Principal Role="Formulario">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="PermisoFormulario">
+        <PropertyRef Name="Formulario_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PerfilFormulario_Perfil">
+    <End Role="Perfil" Type="Model1.Store.PerfilSet" Multiplicity="1" />
+    <End Role="PerfilFormulario" Type="Model1.Store.PerfilFormulario" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Perfil">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="PerfilFormulario">
+        <PropertyRef Name="Perfil_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PerfilFormulario_Formulario">
+    <End Role="PerfilFormulario" Type="Model1.Store.PerfilFormulario" Multiplicity="*" />
+    <End Role="Formulario" Type="Model1.Store.FormularioSet" Multiplicity="1" />
+    <ReferentialConstraint>
+      <Principal Role="Formulario">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="PerfilFormulario">
+        <PropertyRef Name="Formulario_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema xmlns="http://schemas.microsoft.com/ado/2009/11/edm" xmlns:cg="http://schemas.microsoft.com/ado/2006/04/codegeneration" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" Namespace="Model1" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" annotation:UseStrongSpatialTypes="false">
+        <EntityContainer Name="Model1Container1" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="UsuarioSet" EntityType="Model1.Usuario" />
+          <EntitySet Name="PerfilSet" EntityType="Model1.Perfil" />
+          <EntitySet Name="FormularioSet" EntityType="Model1.Formulario" />
+          <EntitySet Name="PermisoSet" EntityType="Model1.Permiso" />
+          <AssociationSet Name="UsuarioPerfil" Association="Model1.UsuarioPerfil">
+            <End Role="Usuario" EntitySet="UsuarioSet" />
+            <End Role="Perfil" EntitySet="PerfilSet" />
+          </AssociationSet>
+          <AssociationSet Name="PermisoFormulario" Association="Model1.PermisoFormulario">
+            <End Role="Permiso" EntitySet="PermisoSet" />
+            <End Role="Formulario" EntitySet="FormularioSet" />
+          </AssociationSet>
+          <AssociationSet Name="PerfilFormulario" Association="Model1.PerfilFormulario">
+            <End Role="Perfil" EntitySet="PerfilSet" />
+            <End Role="Formulario" EntitySet="FormularioSet" />
+          </AssociationSet>
+        </EntityContainer>
+        <EntityType Name="Usuario">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Nombre" Type="String" Nullable="false" />
+          <Property Name="Email" Type="String" Nullable="false" />
+          <Property Name="DNI" Type="String" Nullable="false" />
+          <Property Name="Contraseña" Type="String" Nullable="false" />
+          <NavigationProperty Name="Perfil" Relationship="Model1.UsuarioPerfil" FromRole="Usuario" ToRole="Perfil" />
+        </EntityType>
+        <EntityType Name="Perfil">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Nombre" Type="String" Nullable="false" />
+          <NavigationProperty Name="Usuario" Relationship="Model1.UsuarioPerfil" FromRole="Perfil" ToRole="Usuario" />
+          <NavigationProperty Name="Formulario" Relationship="Model1.PerfilFormulario" FromRole="Perfil" ToRole="Formulario" />
+        </EntityType>
+        <EntityType Name="Formulario">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Nombre" Type="String" Nullable="false" />
+          <Property Name="NombreSistema" Type="String" Nullable="false" />
+          <NavigationProperty Name="Permiso" Relationship="Model1.PermisoFormulario" FromRole="Formulario" ToRole="Permiso" />
+          <NavigationProperty Name="Perfil" Relationship="Model1.PerfilFormulario" FromRole="Formulario" ToRole="Perfil" />
+        </EntityType>
+        <EntityType Name="Permiso">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Nombre" Type="String" Nullable="false" />
+          <Property Name="NombreSistema" Type="String" Nullable="false" />
+          <NavigationProperty Name="Formulario" Relationship="Model1.PermisoFormulario" FromRole="Permiso" ToRole="Formulario" />
+        </EntityType>
+        <Association Name="UsuarioPerfil">
+          <End Type="Model1.Usuario" Role="Usuario" Multiplicity="*" />
+          <End Type="Model1.Perfil" Role="Perfil" Multiplicity="1" />
+        </Association>
+        <Association Name="PermisoFormulario">
+          <End Type="Model1.Permiso" Role="Permiso" Multiplicity="*" />
+          <End Type="Model1.Formulario" Role="Formulario" Multiplicity="*" />
+        </Association>
+        <Association Name="PerfilFormulario">
+          <End Type="Model1.Perfil" Role="Perfil" Multiplicity="*" />
+          <End Type="Model1.Formulario" Role="Formulario" Multiplicity="*" />
+        </Association>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+    <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="Model1StoreContainer" CdmEntityContainer="Model1Container1">
+    <EntitySetMapping Name="UsuarioSet">
+      <EntityTypeMapping TypeName="IsTypeOf(Model1.Usuario)">
+        <MappingFragment StoreEntitySet="UsuarioSet">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="DNI" ColumnName="DNI" />
+          <ScalarProperty Name="Contraseña" ColumnName="Contraseña" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PerfilSet">
+      <EntityTypeMapping TypeName="IsTypeOf(Model1.Perfil)">
+        <MappingFragment StoreEntitySet="PerfilSet">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="FormularioSet">
+      <EntityTypeMapping TypeName="IsTypeOf(Model1.Formulario)">
+        <MappingFragment StoreEntitySet="FormularioSet">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+          <ScalarProperty Name="NombreSistema" ColumnName="NombreSistema" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PermisoSet">
+      <EntityTypeMapping TypeName="IsTypeOf(Model1.Permiso)">
+        <MappingFragment StoreEntitySet="PermisoSet">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+          <ScalarProperty Name="NombreSistema" ColumnName="NombreSistema" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <AssociationSetMapping Name="UsuarioPerfil" TypeName="Model1.UsuarioPerfil" StoreEntitySet="UsuarioSet">
+      <EndProperty Name="Perfil">
+        <ScalarProperty Name="Id" ColumnName="Perfil_Id" />
+      </EndProperty>
+      <EndProperty Name="Usuario">
+        <ScalarProperty Name="Id" ColumnName="Id" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="PermisoFormulario" TypeName="Model1.PermisoFormulario" StoreEntitySet="PermisoFormulario">
+      <EndProperty Name="Permiso">
+        <ScalarProperty Name="Id" ColumnName="Permiso_Id" />
+      </EndProperty>
+      <EndProperty Name="Formulario">
+        <ScalarProperty Name="Id" ColumnName="Formulario_Id" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="PerfilFormulario" TypeName="Model1.PerfilFormulario" StoreEntitySet="PerfilFormulario">
+      <EndProperty Name="Perfil">
+        <ScalarProperty Name="Id" ColumnName="Perfil_Id" />
+      </EndProperty>
+      <EndProperty Name="Formulario">
+        <ScalarProperty Name="Id" ColumnName="Formulario_Id" />
+      </EndProperty>
+    </AssociationSetMapping>
+  </EntityContainerMapping>
+</Mapping></edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <edmx:Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </edmx:Connection>
+    <edmx:Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="True" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="Ninguno" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="True" />
+        <DesignerProperty Name="UseLegacyProvider" Value="False" />
+      </DesignerInfoPropertySet>
+    </edmx:Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
